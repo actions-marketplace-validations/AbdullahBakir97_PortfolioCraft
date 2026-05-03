@@ -31,10 +31,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: 0.38.4
-        version: 0.38.4(astro@6.2.0(@azure/storage-blob@12.31.0)(@types/node@24.12.2)(rollup@4.60.2)(typescript@5.4.5)(yaml@2.8.3))
+        version: 0.38.4(astro@6.2.1(@azure/storage-blob@12.31.0)(@types/node@24.12.2)(rollup@4.60.2)(typescript@5.4.5)(yaml@2.8.3))
       astro:
-        specifier: 6.2.0
-        version: 6.2.0(@azure/storage-blob@12.31.0)(@types/node@24.12.2)(rollup@4.60.2)(typescript@5.4.5)(yaml@2.8.3)
+        specifier: 6.2.1
+        version: 6.2.1(@azure/storage-blob@12.31.0)(@types/node@24.12.2)(rollup@4.60.2)(typescript@5.4.5)(yaml@2.8.3)
       sharp:
         specifier: 0.34.5
         version: 0.34.5
@@ -295,6 +295,11 @@ packages:
 
   '@babel/parser@7.29.2':
     resolution: {integrity: sha512-4GgRzy/+fsBa72/RZVJmGKPmZu9Byn8o4MoLpmNe1m8ZfYnz5emHLQz3U4gLud6Zwl0RZIcgiLD7Uq7ySFuDLA==}
+    engines: {node: '>=6.0.0'}
+    hasBin: true
+
+  '@babel/parser@7.29.3':
+    resolution: {integrity: sha512-b3ctpQwp+PROvU/cttc4OYl4MzfJUWy6FZg+PMXfzmt/+39iHVF0sDfqay8TQM3JA2EUOyKcFZt75jWriQijsA==}
     engines: {node: '>=6.0.0'}
     hasBin: true
 
@@ -1600,8 +1605,8 @@ packages:
     peerDependencies:
       astro: ^4.0.0-beta || ^5.0.0-beta || ^3.3.0 || ^6.0.0-beta
 
-  astro@6.2.0:
-    resolution: {integrity: sha512-EUAjibRHghfveuLW/8Wrp9DiL50zsp9VxTGQz9P9h/ViFM13AuWF209gn/Qtt7gZqYahpP6XH+mDT83DEOMgMw==}
+  astro@6.2.1:
+    resolution: {integrity: sha512-3g1sYNly+QAkuO5ErNEQBYvsxorNDSCUNIeStBs+kcXGchvKQl1Q9EuDNOvSg010XLlHJFLVFZs9LV18Jjp4Hg==}
     engines: {node: '>=22.12.0', npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -1860,8 +1865,8 @@ packages:
     resolution: {integrity: sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==}
     engines: {node: '>=8'}
 
-  devalue@5.7.1:
-    resolution: {integrity: sha512-MUbZ586EgQqdRnC4yDrlod3BEdyvE4TapGYHMW2CiaW+KkkFmWEFqBUaLltEZCGi0iFXCEjRF0OjF0DV2QHjOA==}
+  devalue@5.8.0:
+    resolution: {integrity: sha512-2zA9pFEsnp7vWBZbXF5JAgAq0fsUIt/1XPbRiAmRV3lp/2C3upzH+sADiyy66aFCihoLEsrQHxNM5w1gIDfsBg==}
 
   devlop@1.1.0:
     resolution: {integrity: sha512-RWmIqhcFf1lRYBvNmr7qTNuyCt/7/ns2jbpp1+PalgE/rDQcBT0fioSMUpJ93irlUhC5hrg4cYqe6U+0ImW0rA==}
@@ -2640,6 +2645,11 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
+  nanoid@3.3.12:
+    resolution: {integrity: sha512-ZB9RH/39qpq5Vu6Y+NmUaFhQR6pp+M2Xt76XBnEwDaGcVAqhlvxrl3B2bKS5D3NH3QR76v3aSrKaF/Kiy7lEtQ==}
+    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
+    hasBin: true
+
   neotraverse@0.6.18:
     resolution: {integrity: sha512-Z4SmBUweYa09+o6pG+eASabEpP6QkQ70yHj351pQoEXIs8uHbaU2DWVmzBANKgflPa47A50PtB2+NgRpQvr7vA==}
     engines: {node: '>= 10'}
@@ -2834,6 +2844,10 @@ packages:
 
   postcss@8.5.12:
     resolution: {integrity: sha512-W62t/Se6rA0Az3DfCL0AqJwXuKwBeYg6nOaIgzP+xZ7N5BFCI7DYi1qs6ygUYT6rvfi6t9k65UMLJC+PHZpDAA==}
+    engines: {node: ^10 || ^12 || >=14}
+
+  postcss@8.5.13:
+    resolution: {integrity: sha512-qif0+jGGZoLWdHey3UFHHWP0H7Gbmsk8T5VEqyYFbWqPr1XqvLGBbk/sl8V5exGmcYJklJOhOQq1pV9IcsiFag==}
     engines: {node: ^10 || ^12 || >=14}
 
   prettier@2.8.8:
@@ -3612,6 +3626,9 @@ packages:
   zod@4.4.1:
     resolution: {integrity: sha512-a6ENMBBGZBsnlSebQ/eKCguSBeGKSf4O7BPnqVPmYGtpBYI7VSqoVqw+QcB7kPRjbqPwhYTpFbVj/RqNz/CT0Q==}
 
+  zod@4.4.2:
+    resolution: {integrity: sha512-IynmDyxsEsb9RKzO3J9+4SxXnl2FTFSzNBaKKaMV6tsSk0rw9gYw9gs+JFCq/qk2LCZ78KDwyj+Z289TijSkUw==}
+
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
 
@@ -3704,12 +3721,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@5.0.4(astro@6.2.0(@azure/storage-blob@12.31.0)(@types/node@24.12.2)(rollup@4.60.2)(typescript@5.4.5)(yaml@2.8.3))':
+  '@astrojs/mdx@5.0.4(astro@6.2.1(@azure/storage-blob@12.31.0)(@types/node@24.12.2)(rollup@4.60.2)(typescript@5.4.5)(yaml@2.8.3))':
     dependencies:
       '@astrojs/markdown-remark': 7.1.1
       '@mdx-js/mdx': 3.1.1
       acorn: 8.16.0
-      astro: 6.2.0(@azure/storage-blob@12.31.0)(@types/node@24.12.2)(rollup@4.60.2)(typescript@5.4.5)(yaml@2.8.3)
+      astro: 6.2.1(@azure/storage-blob@12.31.0)(@types/node@24.12.2)(rollup@4.60.2)(typescript@5.4.5)(yaml@2.8.3)
       es-module-lexer: 2.1.0
       estree-util-visit: 2.0.0
       hast-util-to-html: 9.0.5
@@ -3733,17 +3750,17 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 4.4.1
 
-  '@astrojs/starlight@0.38.4(astro@6.2.0(@azure/storage-blob@12.31.0)(@types/node@24.12.2)(rollup@4.60.2)(typescript@5.4.5)(yaml@2.8.3))':
+  '@astrojs/starlight@0.38.4(astro@6.2.1(@azure/storage-blob@12.31.0)(@types/node@24.12.2)(rollup@4.60.2)(typescript@5.4.5)(yaml@2.8.3))':
     dependencies:
       '@astrojs/markdown-remark': 7.1.1
-      '@astrojs/mdx': 5.0.4(astro@6.2.0(@azure/storage-blob@12.31.0)(@types/node@24.12.2)(rollup@4.60.2)(typescript@5.4.5)(yaml@2.8.3))
+      '@astrojs/mdx': 5.0.4(astro@6.2.1(@azure/storage-blob@12.31.0)(@types/node@24.12.2)(rollup@4.60.2)(typescript@5.4.5)(yaml@2.8.3))
       '@astrojs/sitemap': 3.7.2
       '@pagefind/default-ui': 1.5.2
       '@types/hast': 3.0.4
       '@types/js-yaml': 4.0.9
       '@types/mdast': 4.0.4
-      astro: 6.2.0(@azure/storage-blob@12.31.0)(@types/node@24.12.2)(rollup@4.60.2)(typescript@5.4.5)(yaml@2.8.3)
-      astro-expressive-code: 0.41.7(astro@6.2.0(@azure/storage-blob@12.31.0)(@types/node@24.12.2)(rollup@4.60.2)(typescript@5.4.5)(yaml@2.8.3))
+      astro: 6.2.1(@azure/storage-blob@12.31.0)(@types/node@24.12.2)(rollup@4.60.2)(typescript@5.4.5)(yaml@2.8.3)
+      astro-expressive-code: 0.41.7(astro@6.2.1(@azure/storage-blob@12.31.0)(@types/node@24.12.2)(rollup@4.60.2)(typescript@5.4.5)(yaml@2.8.3))
       bcp-47: 2.1.0
       hast-util-from-html: 2.0.3
       hast-util-select: 6.0.4
@@ -3894,6 +3911,10 @@ snapshots:
   '@babel/helper-validator-identifier@7.28.5': {}
 
   '@babel/parser@7.29.2':
+    dependencies:
+      '@babel/types': 7.29.0
+
+  '@babel/parser@7.29.3':
     dependencies:
       '@babel/types': 7.29.0
 
@@ -4261,8 +4282,8 @@ snapshots:
       hast-util-to-html: 9.0.5
       hast-util-to-text: 4.0.2
       hastscript: 9.0.1
-      postcss: 8.5.12
-      postcss-nested: 6.2.0(postcss@8.5.12)
+      postcss: 8.5.13
+      postcss-nested: 6.2.0(postcss@8.5.13)
       unist-util-visit: 5.1.0
       unist-util-visit-parents: 6.0.2
 
@@ -5124,12 +5145,12 @@ snapshots:
 
   astring@1.9.0: {}
 
-  astro-expressive-code@0.41.7(astro@6.2.0(@azure/storage-blob@12.31.0)(@types/node@24.12.2)(rollup@4.60.2)(typescript@5.4.5)(yaml@2.8.3)):
+  astro-expressive-code@0.41.7(astro@6.2.1(@azure/storage-blob@12.31.0)(@types/node@24.12.2)(rollup@4.60.2)(typescript@5.4.5)(yaml@2.8.3)):
     dependencies:
-      astro: 6.2.0(@azure/storage-blob@12.31.0)(@types/node@24.12.2)(rollup@4.60.2)(typescript@5.4.5)(yaml@2.8.3)
+      astro: 6.2.1(@azure/storage-blob@12.31.0)(@types/node@24.12.2)(rollup@4.60.2)(typescript@5.4.5)(yaml@2.8.3)
       rehype-expressive-code: 0.41.7
 
-  astro@6.2.0(@azure/storage-blob@12.31.0)(@types/node@24.12.2)(rollup@4.60.2)(typescript@5.4.5)(yaml@2.8.3):
+  astro@6.2.1(@azure/storage-blob@12.31.0)(@types/node@24.12.2)(rollup@4.60.2)(typescript@5.4.5)(yaml@2.8.3):
     dependencies:
       '@astrojs/compiler': 4.0.0
       '@astrojs/internal-helpers': 0.9.0
@@ -5145,7 +5166,7 @@ snapshots:
       clsx: 2.1.1
       common-ancestor-path: 2.0.0
       cookie: 1.1.1
-      devalue: 5.7.1
+      devalue: 5.8.0
       diff: 8.0.4
       dset: 3.1.4
       es-module-lexer: 2.1.0
@@ -5184,7 +5205,7 @@ snapshots:
       vitefu: 1.1.3(vite@7.3.2(@types/node@24.12.2)(yaml@2.8.3))
       xxhash-wasm: 1.1.0
       yargs-parser: 22.0.0
-      zod: 4.4.1
+      zod: 4.4.2
     optionalDependencies:
       sharp: 0.34.5
     transitivePeerDependencies:
@@ -5429,7 +5450,7 @@ snapshots:
 
   detect-libc@2.1.2: {}
 
-  devalue@5.7.1: {}
+  devalue@5.8.0: {}
 
   devlop@1.1.0:
     dependencies:
@@ -6141,7 +6162,7 @@ snapshots:
 
   magicast@0.5.2:
     dependencies:
-      '@babel/parser': 7.29.2
+      '@babel/parser': 7.29.3
       '@babel/types': 7.29.0
       source-map-js: 1.2.1
 
@@ -6672,6 +6693,8 @@ snapshots:
 
   nanoid@3.3.11: {}
 
+  nanoid@3.3.12: {}
+
   neotraverse@0.6.18: {}
 
   nlcst-to-string@4.0.0:
@@ -6850,9 +6873,9 @@ snapshots:
     dependencies:
       fflate: 0.8.2
 
-  postcss-nested@6.2.0(postcss@8.5.12):
+  postcss-nested@6.2.0(postcss@8.5.13):
     dependencies:
-      postcss: 8.5.12
+      postcss: 8.5.13
       postcss-selector-parser: 6.1.2
 
   postcss-selector-parser@6.1.2:
@@ -6865,6 +6888,12 @@ snapshots:
   postcss@8.5.12:
     dependencies:
       nanoid: 3.3.11
+      picocolors: 1.1.1
+      source-map-js: 1.2.1
+
+  postcss@8.5.13:
+    dependencies:
+      nanoid: 3.3.12
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
@@ -7566,7 +7595,7 @@ snapshots:
       esbuild: 0.27.7
       fdir: 6.5.0(picomatch@4.0.4)
       picomatch: 4.0.4
-      postcss: 8.5.12
+      postcss: 8.5.13
       rollup: 4.60.2
       tinyglobby: 0.2.16
     optionalDependencies:
@@ -7665,5 +7694,7 @@ snapshots:
   zod@3.25.76: {}
 
   zod@4.4.1: {}
+
+  zod@4.4.2: {}
 
   zwitch@2.0.4: {}
